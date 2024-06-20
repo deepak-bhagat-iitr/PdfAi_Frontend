@@ -18,7 +18,7 @@ const ChatDashboard = () => {
       setMessages((prevMessages) => [...prevMessages, { text: message, user: true }]);
 
       try {
-        const response = await axios.post('http://localhost:8000/', { question: message });
+        const response = await axios.post('https://pdfai-backend.onrender.com/', { question: message });
 
         if (response.data.answer) {
           console.log(response);
@@ -48,7 +48,7 @@ const ChatDashboard = () => {
     formData.append('file', file);
 
     try {
-      const response = await axios.post('http://localhost:8000/upload', formData);
+      const response = await axios.post('https://pdfai-backend.onrender.com/upload', formData);
 
       if (response.status === 200) {
         setMessages((prevMessages) => [...prevMessages, { text: 'File uploaded successfully!', user: false }]);
