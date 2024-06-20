@@ -59,7 +59,7 @@ PDFPilot requires a backend server for PDF processing and answering queries. Mak
   - `src/App.jsx`: Main entry point of the application where the ChatDashboard component is rendered. Handles state management, message sending, PDF upload, and message display.
   - `src/components/`: Directory for reusable components used throughout the application.
     - `src/components/UploadForm.jsx`: Component responsible for uploading PDF files. Includes a file input field and uses Axios for file upload functionality.
-    - 
+
 
 ## Credits
 - Icons from [React Icons](https://react-icons.github.io/react-icons/).
